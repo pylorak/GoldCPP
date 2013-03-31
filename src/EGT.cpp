@@ -2,6 +2,7 @@
 
 namespace GoldCPP
 {
+  const char EgtReader::kRecordContentMulti_ = 'M';
 
   static size_t FindStringLengthU16(const uint8_t* buff, size_t buffLen, size_t pos)
   {
@@ -39,7 +40,7 @@ namespace GoldCPP
       // Until that is done, we only support the BMP.
       assert((u16text[i] < 0xD800) || (u16text[i] > 0xDBFF));
 
-      text[i] = u16text[i];
+      text[i] = (GPCHR_T)(u16text[i]);
     }
 
     // Clean up

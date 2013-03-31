@@ -6,7 +6,7 @@
 
 namespace GoldCPP
 {
-  class Symbol;
+  struct Symbol;
 
   enum class LRConflict
   {

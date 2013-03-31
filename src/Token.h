@@ -12,8 +12,8 @@
 
 namespace GoldCPP
 {
-  class Symbol;
-  class Reduction;
+  struct Symbol;
+  struct Reduction;
 
   /* Note: The ReductionData and StringData members used to be
    a single, unified "Data" member (of type "Object")

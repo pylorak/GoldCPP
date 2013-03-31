@@ -8,7 +8,7 @@
 namespace GoldCPP
 {
   struct FaEdge;
-  class Symbol;
+  struct Symbol;
 
   struct FaState
   {

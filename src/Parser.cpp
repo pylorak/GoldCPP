@@ -7,6 +7,8 @@
 
 namespace GoldCPP
 {
+  const GPSTR_T Parser::kVersion_ = GPSTR_C("5.0");
+
   void GrammarProperties::setProperty(PropertyIndex index, const GPSTR_T &val)
   {
     _Properties[index] = val;

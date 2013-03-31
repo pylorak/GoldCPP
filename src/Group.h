@@ -7,7 +7,7 @@
 
 namespace GoldCPP
 {
-  class Symbol;
+  struct Symbol;
 
   struct Group
   {

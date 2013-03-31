@@ -3,9 +3,15 @@
 
 #include <string>
 
-#define GPSTR_T       std::u16string
-#define GPSTR_C(str)  u##str
-#define GPCHR_T       char16_t
+#ifndef __GNUC__
+  #define GPSTR_T       std::string
+  #define GPSTR_C(str)  str
+  #define GPCHR_T       char
+#else
+  #define GPSTR_T       std::u16string
+  #define GPSTR_C(str)  u##str
+  #define GPCHR_T       char16_t
+#endif
 
 #endif // GOLDCPP_STRING_H
 

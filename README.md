@@ -35,9 +35,7 @@ How to compile?
 -----------------------------------------
 Just compile everything statically into your project.
 No tricks necessary, except that the code needs to be complied in C++11 mode.
-Tested with GCC 4.7.2 under both Linux and Windows. Due to some language
-features in C++11 it does not compile on VC++2010.
-No idea about VC++2012. Maybe you can try it and if necessary supply a patch?
+Tested with GCC 4.7.2 and VC++2012. No unicode support under VC++ though.
 
 
 How to use?
@@ -61,6 +59,10 @@ the macros defined in "String.h" and make changes as appropriate for you.
 Inputting and outputting UTF-16 is a PITA, unfortunately, and most cross-
 platform applications use UTF-8 for that. This is why I've included UTF8-CPP,
 so that you can easily convert between these string representations.
+
+Unfortunately, unicode is not supported under VC++, because its compiler
+lacks support for unicode string literals. You can still build a unicode
+version of GoldCPP with MinGW or Cygwin.
 
 
 Memory management?

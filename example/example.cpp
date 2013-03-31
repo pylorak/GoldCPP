@@ -1,9 +1,8 @@
-#include "SimpleParser.h"
 #include <fstream>
 #include <iostream>
 #include <string>
-#include "utf8/checked.h"
-#include "Parser.h"
+#include "../src/SimpleParser.h"
+#include "../src/utf8/checked.h"
 
 using namespace GoldCPP;
 using namespace std;

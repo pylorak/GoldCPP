@@ -67,7 +67,7 @@ namespace GoldCPP
   {
   private:
 
-    const GPSTR_T kVersion_ = GPSTR_C("5.0");
+    static const GPSTR_T kVersion_;
 
     // ===== Symbols recognized by the system
     SymbolList SymbolTable_;
@@ -106,6 +106,11 @@ namespace GoldCPP
     void ConsumeBuffer(size_t charCount);
     std::shared_ptr<Token> ProduceToken();
 
+#ifndef __GNUC__
+    Parser(const Parser& that){};
+#else
+    Parser(const Parser& that) = delete;
+#endif
 
   public:
 
@@ -117,7 +122,6 @@ namespace GoldCPP
     GrammarProperties Grammar;
 
     Parser();
-    Parser(const Parser& that) = delete;
 
     /* Specifies the text to be parsed */
     bool Open(const GPSTR_T &source);

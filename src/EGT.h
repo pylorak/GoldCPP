@@ -58,7 +58,7 @@ namespace GoldCPP
   class EgtReader
   {
   private:
-    const char kRecordContentMulti_ = 'M';
+    static const char kRecordContentMulti_;
 
     size_t InputPos_;
     size_t InputLen_;

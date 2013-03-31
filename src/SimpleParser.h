@@ -35,7 +35,12 @@ namespace GoldCPP
   {
   private:
     Parser *parser_;
+
+#ifndef __GNUC__
+    SimpleParser(const SimpleParser& that){}
+#else
     SimpleParser(const SimpleParser& that) = delete;
+#endif
 
   public:
     void* User0;
