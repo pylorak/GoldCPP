@@ -1,6 +1,7 @@
 GoldCPP
 =======
-A C++ Gold Parser engine
+A C++ Gold Parser engine  
+https://github.com/pylorak/GoldCPP
 
 
 Credits
@@ -74,5 +75,4 @@ simple unmanaged pointers and are owned by the Parser object. They are taken
 care of correctly during destruction so you won't have memory leaks, but it 
 means that any non-managed pointer you encounter is only valid during the 
 lifetime of the owning Parser object. So, follow this simple workflow
-and you won't have invalid pointer problems:
-1. Create Parser  2. Do all your processing  3. Destroy Parser
+and you won't have invalid pointer problems: 1. Create Parser  2. Do all your processing  3. Destroy Parser
