@@ -5,8 +5,8 @@ A C++ Gold Parser engine
 
 Credits
 -----------------------------------------
-Reference engine by Devin Cook
-C++ implementation by Károly Pados
+Reference engine by Devin Cook  
+C++ implementation by Károly Pados  
 GoldCPP License: WTFPL
 
 This project includes UTF8-CPP by Nemanja Trifunovic, licensed separately.
